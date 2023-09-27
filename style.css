@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black; */
+}
+
+/* Logo & img   */
+.logo {
+    height: 100px;
+    /* width: 100px; */
+    display: flex;
+}
+
+img {
+    height: 100px;
+    /* width: 100px; */
+    display: flex;
+
+}
+
+/* Navbar */
+#nvbr {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nvbr ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    
+    color: green;
+    list-style: none;
+}
+
+#nvbr li a {
+    display: flex;
+    text-decoration: none;
+
+}
