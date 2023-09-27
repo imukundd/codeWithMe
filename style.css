@@ -1,44 +1,40 @@
-body {
+*{
     margin: 0px;
     padding: 0px;
-    /* background-color: black; */
 }
+/* Logo & IMG  */
+#logo{
+    margin: 10px;
+}
+#logo img{
+    margin: 5px 10px;
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+}
+/* Navigation Bar  */
+.nvbr{
+display: flex;
 
-/* Logo & img   */
-.logo {
-    height: 100px;
-    /* width: 100px; */
+background-color: grey;
+height: 89px;
+}
+.nvbr ul{
     display: flex;
-}
-
-img {
-    height: 100px;
-    /* width: 100px; */
-    display: flex;
-
-}
-
-/* Navbar */
-#nvbr {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#nvbr ul {
-    display: flex;
-    flex-direction: row;
-}
-
-ul li {
-    
-    color: green;
     list-style: none;
+    font-size: 20px;
+    color: white;
 }
-
-#nvbr li a {
-    display: flex;
-    text-decoration: none;
+ul li{
+    /* padding: 1px 5px; */
+    padding: 28px 5px;
+    
+    
+}
+#nvbar ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    
 
 }
