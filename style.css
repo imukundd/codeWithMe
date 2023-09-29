@@ -1,40 +1,198 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 /* Logo & IMG  */
-#logo{
+#logo {
     margin: 10px;
 }
-#logo img{
+
+#logo img {
     margin: 5px 10px;
     height: 60px;
     width: 100px;
     border-radius: 20px;
 }
-/* Navigation Bar  */
-.nvbr{
-display: flex;
 
-background-color: grey;
-height: 89px;
+/* Navigation Bar  */
+.nvbr::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
 }
-.nvbr ul{
+
+.nvbr {
     display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+.nvbr ul {
+    display: flex;
+
     list-style: none;
+}
+
+ul li {
     font-size: 20px;
-    color: white;
+
+
+    text-decoration: none;
+
+
 }
-ul li{
-    /* padding: 1px 5px; */
-    padding: 28px 5px;
-    
-    
+
+.nvbr ul li a {
+    display: block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(130, 18, 18);
+
+
 }
-#nvbar ul li a:hover{
-    cursor: pointer;
+
+.nvbr ul li a:hover {
     background-color: white;
     color: black;
-    
 
 }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 585px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(BG123.jpg) no-repeat center center/cover;
+    height: 650px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 6px 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#services {
+    display: flex;
+    margin: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    border: 2px solid brown;
+    text-align: center;
+    padding: 10px;
+    margin: 24px;
+    border-radius: 20px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+
+
+
+/* Client section */
+#sec1 {
+    height: 400px;
+    
+}
+
+#sec1::before {
+    content: "";
+    position: absolute;
+    background: url(BG123.jpg)no-repeat center center/cover;
+    height: 55%;
+    width: 100%;
+    /* top: 0px;
+    bottom: 0px; */
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.citems img {
+    height: 200px;
+}
+
+.citems {
+    padding: 34px;
+}
+
+/* Form */
+#contact{
+    position: relative;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(jjk02.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box form{
+    width: 35%;
+    /* text-align: center; */
+}
+#contact-box label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 5px;
+}
+/* Utility Classes */
+.h-primary {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    color: brown;
+    text-align: center;
+}
+.center{
+    text-align: center;
